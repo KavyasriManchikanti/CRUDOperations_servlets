@@ -37,9 +37,8 @@ public class userServlet extends HttpServlet {
 	        try {
 	            Connection con = getConnection();
 
-	            // ✅ REGISTER
 	            if ("register".equals(action)) {
-
+					// Register
 	                String name = request.getParameter("name");
 	                String email = request.getParameter("email");
 	                String phone = request.getParameter("phone");
@@ -57,7 +56,7 @@ public class userServlet extends HttpServlet {
 	                out.println("<h3 style='color:green;'>User Registered!</h3>");
 	            }
 
-	            // ✅ UPDATE
+	            //Update
 	            else if ("update".equals(action)) {
 
 	                String phone = request.getParameter("phone");
@@ -80,7 +79,7 @@ public class userServlet extends HttpServlet {
 	                    out.println("<h3 style='color:red;'>User Not Found!</h3>");
 	            }
 
-	            // ✅ DELETE
+	            // Delete
 	            else if ("delete".equals(action)) {
 
 	                String phone = request.getParameter("phone");
@@ -107,7 +106,7 @@ public class userServlet extends HttpServlet {
 	        }
 	    }
 
-	    // 🔹 GET → Retrieve
+	    // Retrive
 	    protected void doGet(HttpServletRequest request, HttpServletResponse response)
 	            throws ServletException, IOException {
 
