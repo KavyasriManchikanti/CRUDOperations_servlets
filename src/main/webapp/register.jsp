@@ -36,7 +36,7 @@
 <body>
 
 
-<form action="<%=request.getContextPath()%>/userServlet" method="post">
+<form action="/userServlet" method="post">
     <input type="hidden" name="action" value="register"/>
     
     <input type="text" name="name" placeholder="Enter Name" required/>
