@@ -25,7 +25,6 @@ public class userServlet extends HttpServlet {
 	        );
 	    }
 
-	    // 🔹 POST → Register, Update, Delete
 	    protected void doPost(HttpServletRequest request, HttpServletResponse response)
 	            throws ServletException, IOException {
 
